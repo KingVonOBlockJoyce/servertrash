@@ -4,11 +4,8 @@ const { Client, GatewayIntentBits } = require("discord.js");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-console.log("BOT_TOKEN length:", process.env.BOT_TOKEN?.length);
-console.log("BOT_TOKEN preview:", process.env.BOT_TOKEN?.slice(0, 4) + "...");
-
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
-client.login(process.env.BOT_TOKEN);
+client.login("MTQwNjcwNTU4NTU4MzQyNzczNg.GIYu37.n8RhxoZbwwbJNEU1L4xwwcNdUQ42qWAledidms");
 
 client.once("ready", () => {
   console.log(`Logged in as ${client.user.tag}`);
@@ -30,4 +27,5 @@ app.get("/", async (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
