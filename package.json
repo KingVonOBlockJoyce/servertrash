@@ -1,0 +1,16 @@
+{
+  "name": "discord-api",
+  "version": "1.0.0",
+  "description": "Discord API to fetch username and avatar by user ID",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "discord.js": "^14.12.1"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
